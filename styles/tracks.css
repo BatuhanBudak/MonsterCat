@@ -1,0 +1,16 @@
+.tracks-title {
+  text-transform: uppercase;
+  margin-bottom: 0.75em;
+  letter-spacing: 3px;
+}
+.icons-container {
+  display: flex;
+}
+
+.icon-link {
+  border: 1px solid hsl(var(--clr-white));
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

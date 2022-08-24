@@ -1,19 +1,4 @@
-@font-face {
-  font-family: "Monument Extended";
-  src: url("/fonts/monumentextended-regular.woff2") format("woff2");
-
-  font-family: "Montserrat";
-  src: url("/fonts/monserat-thin-regular.woff2") format("woff2");
-
-  font-family: "Montserrat";
-  src: url("/fonts/monseratthinitalic.woff2") format("woff2");
-
-  font-family: "Montserrat";
-  src: url("/fonts/monserat-thin-semibold.woff2") format("woff2");
-
-  font-family: "Montserrat";
-  src: url("/fonts/monserat-thin-semibold-italic.woff2") format("woff2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,600;1,100;1,600&family=Roboto:wght@400;500;700&display=swap");
 
 html,
 body {
@@ -36,18 +21,18 @@ body {
   --clr-green: 157 35% 48%;
 
   /* font-families */
-  --ff-primary: "Montserrat", serif;
-  --ff-secondary: "Monument Extended", sans-serif;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Montserrat Alternates", sans-serif;
 
   /* font-sizes */
-  --fs-h1: 1.375rem;
+  --fs-h1: 1.5rem;
   --fs-h2: 1.25rem;
   --fs-body: 1rem;
   --fs-td-number: 1.125rem;
   --fs-td-title: 1.125rem;
   --fs-td-artist: 0.875rem;
   --fs-button: 0.75rem;
-  --fs-links: 0.75rem;
+  --fs-nav-links: 1.125rem;
   --fs-footer: 0.71rem;
 }
 
@@ -159,7 +144,8 @@ h1 {
   line-height: 1;
   letter-spacing: 2.2px;
   font-size: var(--fs-h1);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
+  font-weight: 600;
 }
 
 h2 {
@@ -167,7 +153,7 @@ h2 {
   letter-spacing: 2px;
   font-weight: 400;
   font-size: var(--fs-h2);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
 }
 p {
   font-size: var(--fs-body);
@@ -178,8 +164,6 @@ p {
 
 li {
   color: hsl(var(--clr-white));
-  font-size: var(--fs-links);
-  font-family: var(--ff-secondary);
   font-weight: 500;
   letter-spacing: 1.4px;
   line-height: 25px;
@@ -202,9 +186,9 @@ body {
 a {
   color: hsl(var(--clr-white));
   text-decoration: none;
-  font-size: var(--fs-links);
-  font-family: var(--ff-secondary);
-  font-weight: 400;
+  font-size: var(--fs-nav-links);
+  font-family: var(--ff-primary);
+  font-weight: 500;
   letter-spacing: 1.4px;
   line-height: 24.5px;
 }
@@ -216,32 +200,24 @@ input {
 }
 
 .btn {
-  padding: 0.4em 1em;
-  border-radius: 22px;
-  border: none;
   font-size: 1rem;
-  color: var(--clr-black);
-  background-color: var(--clr-white);
-  align-self: flex-start;
-  transition: opacity 0.2s ease-in-out, background 0.4s ease-in-out,
-    color 0.4s ease-in-out;
-  letter-spacing: 0.8px;
-  line-height: 1.71;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
   gap: 0.5em;
-  min-width: 150px;
-  max-width: 150px;
+  padding: 0.6em 1em;
+  color: hsl(var(--clr-white));
+  border: 1px solid black;
+  background-color: hsl(var(--clr-black));
+  transition: opacity 0.2s ease-in-out, background 0.4s ease-in-out,
+    color 0.4s ease-in-out;
+  letter-spacing: 1px;
+  line-height: 1.71;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
 }
 
-.btn:after {
-  display: block;
-  content: url("/icons/right-arrow.svg");
-  width: 20px;
-  height: 20px;
-}
 @media screen and (min-width: 500px) {
   .btn {
     align-self: unset;
@@ -257,6 +233,7 @@ input {
   left: 0;
   overflow: hidden;
   mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, black 50%, transparent 100%);
 }
 .background-poster {
   width: 102%;
@@ -268,8 +245,13 @@ input {
   background-position: center;
   background-size: cover;
   z-index: -1;
+  filter: blur(5px) brightness(38%);
 }
 
-.background-poster {
-  filter: blur(5px) brightness(38%);
+main {
+  padding-top: 150px;
+}
+section {
+  margin-bottom: 5rem;
+  padding-inline: 1.5rem;
 }

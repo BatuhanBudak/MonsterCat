@@ -1,0 +1,56 @@
+.album-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.green {
+  color: hsl(var(--clr-green));
+}
+
+.album-info {
+  font-weight: 600;
+  font-style: italic;
+  font-weight: 0.875rem;
+  margin-block: 1.2em;
+}
+
+.track-info-track {
+  margin-bottom: 0.5em;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.track-info-artist {
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: var(--fs-td-title);
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+}
+.album-button-container {
+  display: flex;
+  gap: 0.5rem;
+}
+.listen-button {
+  background-color: hsl(var(--clr-green));
+  border-color: hsl(var(--clr-green));
+}
+.share-button {
+  background-color: transparent;
+  border-color: hsl(var(--clr-white));
+}
+
+.listen-button::before,
+.share-button::before {
+  display: inline-block;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+}
+
+.listen-button::before {
+  content: url("/icons/play.svg");
+}
+.share-button::before {
+  content: url("/icons/share.svg");
+}

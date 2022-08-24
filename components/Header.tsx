@@ -5,26 +5,26 @@ import Image from 'next/image';
 import logo from '../public/icons/monstercat-logo.webp';
 
 export default function Header() {
-    const [navToggled, setNavToggled] = useState(false);
+    const [navOpen, setNavOpen] = useState(false);
     const windowWidth = useScreenSize();
     const desktopScreenWidth = 800;
 
     function toggleNav() {
         if (windowWidth) {
             if (windowWidth > desktopScreenWidth) return;
-            setNavToggled((prev) => !prev);
+            setNavOpen((prev) => !prev);
         }
     }
 
     function closeNav() {
         if (windowWidth) {
             if (windowWidth > desktopScreenWidth) return;
-            setNavToggled(false);
+            setNavOpen(false);
         }
     }
 
     return (
-        <header className={`header ${navToggled ? 'nav-open' : ''}`}>
+        <header className={`header ${navOpen ? 'nav-open' : ''}`}>
 
 
             <a href="https://www.monstercat.com" className='logo-link'>
@@ -32,7 +32,7 @@ export default function Header() {
             </a>
 
             <button className="nav-toggle"
-                aria-expanded={navToggled}
+                aria-expanded={navOpen}
                 onClick={toggleNav}
                 aria-controls="navigation">
                 <span className='hamburger'> </span>
