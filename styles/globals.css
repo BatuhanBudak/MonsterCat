@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,600;1,100;1,600&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:wght@400;500;700&display=swap");
 
 html,
 body {
@@ -22,7 +22,7 @@ body {
 
   /* font-families */
   --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Montserrat Alternates", sans-serif;
+  --ff-secondary: "Playfair Display", sans-serif;
 
   /* font-sizes */
   --fs-h1: 1.5rem;

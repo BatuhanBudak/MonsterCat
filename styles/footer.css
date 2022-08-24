@@ -1,0 +1,106 @@
+footer {
+  padding-inline: 1.5rem;
+}
+.footer-first-section {
+  padding-block: 3rem;
+  border-bottom: 1px solid hsl(var(--clr-white));
+  border-top: 1px solid hsl(var(--clr-white));
+}
+
+.footer-links-list {
+  margin-bottom: 2.5rem;
+}
+
+.footer-links {
+  text-transform: uppercase;
+}
+
+.news-title {
+  text-transform: uppercase;
+}
+
+.news-container {
+  margin-bottom: 2.5rem;
+}
+.news-title {
+  font-family: var(--ff-primary);
+  margin-bottom: 0.75em;
+  font-size: 1.175rem;
+  color: hsl(var(--clr-white) / 0.8);
+  font-style: italic;
+}
+
+.news-body {
+  font-style: italic;
+  font-size: var(--fs-td-artist);
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.footer-second-section {
+  padding-block: 3rem;
+}
+
+.signup-form {
+  display: flex;
+  border-bottom: 1px solid hsl(var(--clr-white) / 0.5);
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  font-size: 1.25rem;
+  padding-block: 0.75em;
+  width: 100%;
+  background-color: transparent;
+  color: hsl(var(--clr-white));
+  border: none;
+  border-radius: 0;
+  flex: 75%;
+}
+input::placeholder {
+  letter-spacing: 0.05em;
+}
+input:focus {
+  outline: none;
+}
+.signup-button {
+  flex: 25%;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding: 0.6rem 1.5rem 0.5rem;
+  transition: color 100ms linear, background-color 100ms linear,
+    border-color 100ms linear;
+  cursor: pointer;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-left: auto;
+  background-image: url("../public/icons/right-chevron.svg");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: right center;
+}
+
+.footer-second__icons-container {
+  margin-bottom: 3rem;
+}
+
+.footer-second__icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-second-rights {
+  margin-bottom: 1rem;
+}
+
+.acknowledgements {
+  text-align: center;
+  font-size: var(--fs-footer);
+}
+.acknowledgements:first-child {
+  margin-bottom: 2em;
+}
