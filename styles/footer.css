@@ -1,6 +1,14 @@
 footer {
-  padding-inline: 1.5rem;
+  padding-inline: 1.5em;
+  font-size: var(--fs-body);
 }
+
+@media screen and (min-width: 33em) {
+  footer {
+    padding-inline: max(3em, 15vw);
+  }
+}
+
 .footer-first-section {
   padding-block: 3rem;
   border-bottom: 1px solid hsl(var(--clr-white));
@@ -95,6 +103,7 @@ input:focus {
 }
 .footer-second-rights {
   margin-bottom: 1rem;
+  letter-spacing: 2.5px;
 }
 
 .acknowledgements {

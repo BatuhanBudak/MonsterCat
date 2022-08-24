@@ -1,7 +1,12 @@
+.tracks-section {
+  margin-bottom: 3rem;
+}
+
 .tracks-title {
   text-transform: uppercase;
   margin-bottom: 0.75em;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  font-size: var(--fs-h2);
 }
 .icons-container {
   display: flex;

@@ -1,5 +1,4 @@
 .tracks-table-container {
-  padding-inline: 1rem;
   font-size: var(--fs-body);
   font-family: var(--ff-secondary);
   font-weight: 600;
@@ -9,11 +8,22 @@
   text-transform: uppercase;
   margin-bottom: 0.75em;
   letter-spacing: 3px;
+  font-size: var(--fs-h2);
 }
 
 .tracks-table {
   table-layout: auto;
   width: 100%;
+}
+
+.track-list-number {
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 33em) {
+  .track-list-number {
+    padding-bottom: 20px;
+  }
 }
 
 .track-list-number,
@@ -29,6 +39,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   font-size: var(--fs-td-title);
+  letter-spacing: -0.05em;
+  font-weight: 400;
 }
 .track-list-info-artist {
   font-size: var(--fs-td-artist);

@@ -2,6 +2,7 @@
   text-transform: uppercase;
   margin-bottom: 0.75em;
   letter-spacing: 3px;
+  font-size: var(--fs-h2);
 }
 .video-container {
   aspect-ratio: 16/9;

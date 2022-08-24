@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import "../styles/header.css";
 import "../styles/albumInfo.css";
-import "../styles/tracks.css";
+import "../styles/stream.css";
 import "../styles/trackTable.css";
 import "../styles/musicVideo.css";
 import "../styles/footer.css";
