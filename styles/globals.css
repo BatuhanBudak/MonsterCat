@@ -5,7 +5,9 @@ body {
   padding: 0;
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 *,
 *::before,
 *::after {
@@ -53,21 +55,18 @@ body {
     --fs-td-title: 1.6rem;
   }
 }
-@media (min-width: 1000px) {
+
+@media screen and (min-width: 62em) {
   :root {
-    --fs-h1: 3.2rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 3.25rem;
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 90em) {
   :root {
-    --fs-h1: 3.5rem;
-    --fs-h2: 1.6rem;
-  }
-}
-@media (min-width: 1500px) {
-  :root {
-    --fs-h1: 3.7rem;
-    --fs-h2: 1.7rem;
+    --fs-h1: 3rem;
+    --fs-h2: 3.75rem;
   }
 }
 
@@ -175,7 +174,6 @@ li {
 
 body {
   font-family: var(--ff-primary);
-  min-height: 100vh;
   color: hsl(var(--clr-white));
   background-color: var(--clr-black);
   font-family: "Montserrat", "Helvetica", Arial, sans-serif;
@@ -185,6 +183,56 @@ body {
   background-repeat: repeat;
   background-attachment: scroll;
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 34rem) {
+  body::after {
+    background-image: url("https://cdn.monstercat.com/background-tile.webp");
+    content: "";
+    position: fixed;
+    height: 300%;
+    width: 300%;
+    top: -100%;
+    left: -50%;
+    opacity: 0.5;
+    animation: grain 8s steps(10) infinite;
+    z-index: -2;
+  }
+}
+@keyframes grain {
+  0% {
+    transform: translate(0px);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(0px);
+  }
 }
 
 a {
@@ -279,6 +327,18 @@ input {
 @media (min-width: 62em) {
   .content {
     max-width: 62rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .content {
+    max-width: 75rem;
+  }
+}
+
+@media (min-width: 120em) {
+  .content {
+    max-width: 100rem;
   }
 }
 

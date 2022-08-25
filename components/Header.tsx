@@ -14,21 +14,14 @@ import player from "../public/icons/player-small.svg";
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const windowWidth = useScreenSize();
-  const desktopScreenWidth = 1000;
   const headerFirstBreakPoint = 550;
 
   function toggleNav() {
-    if (windowWidth) {
-      if (windowWidth > desktopScreenWidth) return;
-      setNavOpen((prev) => !prev);
-    }
+    setNavOpen((prev) => !prev);
   }
 
   function closeNav() {
-    if (windowWidth) {
-      if (windowWidth > desktopScreenWidth) return;
-      setNavOpen(false);
-    }
+    setNavOpen(false);
   }
 
   return (

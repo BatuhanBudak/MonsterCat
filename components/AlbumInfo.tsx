@@ -22,13 +22,15 @@ export default function AlbumInfo() {
           <span className="green">Instinct</span>— Released May 22, 2020{" "}
         </p>
       </div>
-      <div className="track-info-container">
-        <h1 className="track-info-track">LEVEL DAYS</h1>
-        <p className="track-info-artist">CONRO</p>
-      </div>
-      <div className="album-button-container">
-        <button className="listen-button btn">Listen now</button>
-        <button className="share-button btn">share</button>
+      <div className="album-info-details-container">
+        <div className="track-info-container">
+          <h1 className="track-info-track">LEVEL DAYS</h1>
+          <p className="track-info-artist">CONRO</p>
+        </div>
+        <div className="album-button-container">
+          <button className="listen-button btn">Listen now</button>
+          <button className="share-button btn">share</button>
+        </div>
       </div>
     </section>
   );
