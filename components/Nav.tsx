@@ -18,7 +18,7 @@ export default function Nav({ closeNav }) {
   const [toggledThird, toggleStateThird] = useToggle();
   const [toggledFourth, toggleStateFourth] = useToggle();
 
-  if (windowWidth < 800) {
+  if (windowWidth < 1000) {
     return (
       <nav id="navigation" className="navigation">
         <div className="navigation-container">

@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-first-section">
-        <ul className="footer-links-list">
+        <ul className="footer-links-first-list">
           <li>
             <a className="footer-links" href="">
               about monstercat
@@ -42,6 +42,8 @@ export default function Footer() {
               press
             </a>
           </li>
+        </ul>
+        <ul className="footer-links-second-list">
           <li>
             <a className="footer-links" href="">
               terms of service

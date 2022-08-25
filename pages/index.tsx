@@ -6,12 +6,14 @@ import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <BackgroundPage />
       <Header />
-      <MainContent />
-      <Footer />
-    </div>
+      <div className="content">
+        <MainContent />
+        <Footer />
+      </div>
+    </>
   );
 };
 
