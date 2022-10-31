@@ -32,7 +32,7 @@ export default function Header() {
             <Image src={logo} alt="monstercat logo" />
           </a>
 
-          {windowWidth >= headerFirstBreakPoint && (
+          {windowWidth! >= headerFirstBreakPoint && (
             <ul className="header-social-links-list">
               <li>
                 <a href="">
