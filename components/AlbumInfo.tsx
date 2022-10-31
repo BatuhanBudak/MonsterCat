@@ -11,10 +11,10 @@ export default function AlbumInfo() {
     <section className="album-info-section">
       <div className="album-info-container">
         <div className="album-image">
-          {windowWidth < firstBreakPoint && (
+          {windowWidth! < firstBreakPoint && (
             <Image src={albumCover} alt="album image" />
           )}
-          {windowWidth >= firstBreakPoint && (
+          {windowWidth! >= firstBreakPoint && (
             <Image src={albumCoverBig} alt="album image" />
           )}
         </div>
