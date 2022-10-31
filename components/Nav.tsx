@@ -11,7 +11,7 @@ import tiktok from "../public/icons/tiktok.svg";
 import facebook from "../public/icons/facebook.svg";
 import player from "../public/icons/player-small.svg";
 
-export default function Nav({ closeNav }) {
+export default function Nav({ closeNav }: { closeNav: () => void }) {
   const [toggledFirst, toggleStateFirst] = useToggle();
   const [toggledSecond, toggleStateSecond] = useToggle();
   const [toggledThird, toggleStateThird] = useToggle();
